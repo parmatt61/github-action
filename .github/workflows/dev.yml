@@ -23,7 +23,9 @@ jobs:
       run: echo "My greetings to you!"
     - name: print goodbye
       run: echo "My blessings to you!"
-    
+    - name: print hostname
+      run: echo "127.0.0.1 $HOSTNAME" | tee -a /etc/hosts
+
       
       
     
